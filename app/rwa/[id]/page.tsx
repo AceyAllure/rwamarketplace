@@ -26,17 +26,17 @@ export default function AssetDetailPage({ params }: AssetDetailPageProps) {
   return (
     <div className="bg-base text-cream">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-surface-light">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold-600/5 to-transparent pointer-events-none" />
+      <section className="relative overflow-hidden border-b border-neon-cyan/30">
+        <div className="absolute inset-0 bg-gradient-to-b from-neon-cyan/5 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 relative z-10">
           <div className="mb-8">
-            <a href="/rwa" className="text-gold-400 hover:text-gold-300 text-sm font-medium mb-4 inline-block">
+            <a href="/rwa" className="text-neon-cyan hover:text-neon-blue text-sm font-medium mb-4 inline-block uppercase tracking-wider">
               ← Back to Marketplace
             </a>
           </div>
 
           {/* Image Placeholder */}
-          <div className="h-64 sm:h-96 bg-gradient-to-br from-gold-600/20 to-gold-900/20 rounded-lg flex items-center justify-center text-9xl mb-8 hover:from-gold-600/30 hover:to-gold-900/30 transition-all duration-200">
+          <div className="h-64 sm:h-96 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 rounded-lg flex items-center justify-center text-9xl mb-8 hover:from-neon-cyan/20 hover:to-neon-purple/20 transition-all duration-300 border border-neon-cyan/30 shadow-lg shadow-neon-cyan/20">
             {asset.image}
           </div>
 
@@ -46,7 +46,7 @@ export default function AssetDetailPage({ params }: AssetDetailPageProps) {
               <div className="flex items-center gap-3 mb-3">
                 <PrototypeBadge />
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-gold-400 mb-3 leading-tight">
+              <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent mb-3 leading-tight">
                 {asset.name}
               </h1>
               <p className="text-lg text-gold-500">{asset.class}</p>

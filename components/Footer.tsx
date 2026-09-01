@@ -2,12 +2,12 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-surface border-t border-surface-light mt-20">
+    <footer className="bg-surface border-t border-neon-cyan/30 mt-20 shadow-lg shadow-neon-cyan/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="text-lg font-bold text-gold-400 mb-3">About Kurogami RWA</h3>
+            <h3 className="text-lg font-bold bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent mb-3 uppercase tracking-wider">About Kurogami RWA</h3>
             <p className="text-dim text-sm leading-relaxed">
               A prototype marketplace for tokenized real-world asset participation. 
               This is a demonstration interface showing market structure and participation pathways.
@@ -16,20 +16,20 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-lg font-bold text-gold-400 mb-3">Explore</h3>
+            <h3 className="text-lg font-bold bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent mb-3 uppercase tracking-wider">Explore</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/rwa" className="text-dim hover:text-gold-400 transition-colors">
+                <a href="/rwa" className="text-dim hover:text-neon-cyan transition-colors">
                   All Assets
                 </a>
               </li>
               <li>
-                <a href="/rwa/claim-path" className="text-dim hover:text-gold-400 transition-colors">
+                <a href="/rwa/claim-path" className="text-dim hover:text-neon-cyan transition-colors">
                   Claim Path
                 </a>
               </li>
               <li>
-                <a href="/rwa/liquidity-path" className="text-dim hover:text-gold-400 transition-colors">
+                <a href="/rwa/liquidity-path" className="text-dim hover:text-neon-cyan transition-colors">
                   Liquidity Options
                 </a>
               </li>
