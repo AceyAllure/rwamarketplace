@@ -7,9 +7,9 @@ interface AssetCardProps {
 
 export function AssetCard({ asset }: AssetCardProps) {
   return (
-    <div className="bg-surface-light rounded-lg overflow-hidden border border-surface-light hover:border-gold-600/50 transition-all duration-200 hover:shadow-lg hover:shadow-gold-600/10 group cursor-pointer">
+    <div className="bg-surface-light rounded-lg overflow-hidden border border-neon-cyan/30 hover:border-neon-cyan transition-all duration-300 hover:shadow-glow-cyan group cursor-pointer">
       {/* Image */}
-      <div className="h-40 bg-gradient-to-br from-gold-600/20 to-gold-900/20 flex items-center justify-center text-6xl group-hover:from-gold-600/30 group-hover:to-gold-900/30 transition-all duration-200">
+      <div className="h-40 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 flex items-center justify-center text-6xl group-hover:from-neon-cyan/20 group-hover:to-neon-purple/20 transition-all duration-300">
         {asset.image}
       </div>
       
@@ -24,7 +24,7 @@ export function AssetCard({ asset }: AssetCardProps) {
         
         {/* Class and Location */}
         <div className="mb-3 space-y-1">
-          <p className="text-sm text-gold-400 font-medium">{asset.class}</p>
+          <p className="text-sm text-neon-cyan font-bold uppercase tracking-wider">{asset.class}</p>
           <p className="text-xs text-dim">{asset.location}</p>
         </div>
         
@@ -34,10 +34,10 @@ export function AssetCard({ asset }: AssetCardProps) {
         </div>
         
         {/* Metrics */}
-        <div className="space-y-2 mb-4 pb-4 border-b border-surface/50">
+        <div className="space-y-2 mb-4 pb-4 border-b border-neon-cyan/20">
           <div className="flex justify-between items-center text-sm">
             <span className="text-dim">Indicative Value</span>
-            <span className="text-gold-400 font-semibold">{asset.indicativeValue}</span>
+            <span className="text-neon-cyan font-bold">{asset.indicativeValue}</span>
           </div>
           <div className="flex justify-between items-center text-sm">
             <span className="text-dim">Min. Participation</span>
@@ -55,7 +55,7 @@ export function AssetCard({ asset }: AssetCardProps) {
         {/* CTA */}
         <a
           href={`/rwa/${asset.id}`}
-          className="block w-full bg-gold-600 hover:bg-gold-700 text-black text-center py-2 rounded-lg font-medium transition-all duration-200"
+          className="block w-full bg-gradient-to-r from-neon-cyan to-neon-blue hover:shadow-glow-intense-cyan text-black text-center py-2 rounded-lg font-bold uppercase tracking-wider transition-all duration-300"
         >
           View Details
         </a>

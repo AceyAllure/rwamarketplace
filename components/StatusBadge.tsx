@@ -4,12 +4,12 @@ interface StatusBadgeProps {
 }
 
 export function StatusBadge({ status, className = '' }: StatusBadgeProps) {
-  const baseClasses = 'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium'
+  const baseClasses = 'inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider'
   
   const statusClasses = {
-    'Open': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40',
-    'Coming Soon': 'bg-amber-500/20 text-amber-300 border border-amber-500/40',
-    'Reserved': 'bg-slate-500/20 text-slate-300 border border-slate-500/40',
+    'Open': 'bg-neon-green/20 text-neon-green border border-neon-green/50 shadow-lg shadow-neon-green/20',
+    'Coming Soon': 'bg-neon-purple/20 text-neon-purple border border-neon-purple/50 shadow-lg shadow-neon-purple/20',
+    'Reserved': 'bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/50 shadow-lg shadow-neon-cyan/20',
   }
   
   return (

@@ -3,23 +3,23 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        gold: {
-          50: '#fefbf3',
-          100: '#fdf7e6',
-          200: '#faecc3',
-          300: '#f7dfa0',
-          400: '#f1c85a',
-          500: '#e8b514',
-          600: '#d4a00f',
-          700: '#b0800c',
-          800: '#8d660a',
-          900: '#735408',
-          950: '#3f2d04',
+        neon: {
+          cyan: '#00f0ff',
+          purple: '#b026ff',
+          blue: '#0080ff',
+          pink: '#ff006e',
+          green: '#00ff88',
+        },
+        cyber: {
+          950: '#0a0e27',
+          900: '#0f1535',
+          800: '#1a1f4d',
+          700: '#252d66',
         },
         slate: {
           950: '#0a0a0a',
@@ -27,13 +27,26 @@ const config: Config = {
         },
       },
       backgroundColor: {
-        'base': '#0a0a0a',
-        'surface': '#1a1a1a',
-        'surface-light': '#262626',
+        'base': '#0a0e27',
+        'surface': '#1a1f4d',
+        'surface-light': '#252d66',
+        'surface-dark': '#0f1535',
       },
       textColor: {
-        'cream': '#f5f1e8',
-        'dim': '#a8a8a8',
+        'cream': '#f0f4ff',
+        'dim': '#8892b0',
+        'neon-cyan': '#00f0ff',
+        'neon-purple': '#b026ff',
+      },
+      boxShadow: {
+        'glow-cyan': '0 0 20px rgba(0, 240, 255, 0.3)',
+        'glow-purple': '0 0 20px rgba(176, 38, 255, 0.3)',
+        'glow-blue': '0 0 20px rgba(0, 128, 255, 0.3)',
+        'glow-intense-cyan': '0 0 40px rgba(0, 240, 255, 0.5)',
+      },
+      borderColor: {
+        'neon-cyan': '#00f0ff',
+        'neon-purple': '#b026ff',
       },
       fontSize: {
         'xs': '0.75rem',

@@ -32,9 +32,9 @@ export function WaitlistForm() {
 
   if (submitted) {
     return (
-      <div className="bg-surface-light rounded-lg p-8 border border-gold-600/30 text-center">
+      <div className="bg-surface-light rounded-lg p-8 border border-neon-green/30 text-center shadow-lg shadow-neon-green/20">
         <div className="text-3xl mb-3">✓</div>
-        <h3 className="text-xl font-bold text-gold-400 mb-2">Request Received</h3>
+        <h3 className="text-xl font-bold text-neon-green mb-2">Request Received</h3>
         <p className="text-dim">
           Thank you for your interest. We&apos;ll notify you when assets matching your criteria become available.
         </p>
@@ -45,39 +45,39 @@ export function WaitlistForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-cream mb-2">Name</label>
+        <label className="block text-sm font-bold text-cream mb-2 uppercase tracking-wider">Name</label>
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full bg-surface border border-surface-light rounded-lg px-4 py-3 text-cream placeholder-dim focus:outline-none focus:border-gold-600 transition-colors"
+          className="w-full bg-surface border border-neon-cyan/30 rounded-lg px-4 py-3 text-cream placeholder-dim focus:outline-none focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/30 transition-all"
           placeholder="Your name"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-cream mb-2">Contact Email</label>
+        <label className="block text-sm font-bold text-cream mb-2 uppercase tracking-wider">Contact Email</label>
         <input
           type="email"
           name="contact"
           value={formData.contact}
           onChange={handleChange}
           required
-          className="w-full bg-surface border border-surface-light rounded-lg px-4 py-3 text-cream placeholder-dim focus:outline-none focus:border-gold-600 transition-colors"
+          className="w-full bg-surface border border-neon-cyan/30 rounded-lg px-4 py-3 text-cream placeholder-dim focus:outline-none focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/30 transition-all"
           placeholder="your@email.com"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-cream mb-2">Preferred Asset Class</label>
+        <label className="block text-sm font-bold text-cream mb-2 uppercase tracking-wider">Preferred Asset Class</label>
         <select
           name="assetClass"
           value={formData.assetClass}
           onChange={handleChange}
           required
-          className="w-full bg-surface border border-surface-light rounded-lg px-4 py-3 text-cream focus:outline-none focus:border-gold-600 transition-colors"
+          className="w-full bg-surface border border-neon-cyan/30 rounded-lg px-4 py-3 text-cream focus:outline-none focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/30 transition-all"
         >
           <option value="">Select a class</option>
           <option value="Real Estate">Real Estate</option>
@@ -90,13 +90,13 @@ export function WaitlistForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-cream mb-2">Ticket Size Range</label>
+        <label className="block text-sm font-bold text-cream mb-2 uppercase tracking-wider">Ticket Size Range</label>
         <select
           name="ticketSize"
           value={formData.ticketSize}
           onChange={handleChange}
           required
-          className="w-full bg-surface border border-surface-light rounded-lg px-4 py-3 text-cream focus:outline-none focus:border-gold-600 transition-colors"
+          className="w-full bg-surface border border-neon-cyan/30 rounded-lg px-4 py-3 text-cream focus:outline-none focus:border-neon-cyan focus:ring-2 focus:ring-neon-cyan/30 transition-all"
         >
           <option value="">Select range</option>
           <option value="under-25k">Under $25k</option>

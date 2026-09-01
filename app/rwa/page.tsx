@@ -27,16 +27,16 @@ export default function RWAMarketplace() {
   return (
     <div className="bg-base text-cream">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-surface-light">
-        <div className="absolute inset-0 bg-gradient-to-b from-gold-600/5 to-transparent pointer-events-none" />
+      <section className="relative overflow-hidden border-b border-neon-cyan/30">
+        <div className="absolute inset-0 bg-gradient-to-b from-neon-cyan/5 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-32 relative z-10">
           <div className="flex items-center gap-3 mb-6">
             <PrototypeBadge />
           </div>
-          <h2 className="text-5xl sm:text-6xl font-bold text-gold-400 mb-6 leading-tight">
+          <h2 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent mb-6 leading-tight">
             RWA MARKETPLACE
           </h2>
-          <p className="text-xl sm:text-2xl text-dim max-w-3xl mb-4 font-light">
+          <p className="text-xl sm:text-2xl text-cream max-w-3xl mb-4 font-light">
             Real-world asset participation surface
           </p>
           <p className="text-lg text-dim max-w-3xl mb-8">
@@ -56,7 +56,7 @@ export default function RWAMarketplace() {
       </section>
 
       {/* Stats Strip */}
-      <section className="bg-surface-light border-b border-surface-light py-12">
+      <section className="bg-surface-light border-b border-neon-cyan/30 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
             <MetricCard
@@ -118,10 +118,10 @@ export default function RWAMarketplace() {
       </section>
 
       {/* Info Banner */}
-      <section className="bg-surface-light border-t border-surface-light py-12">
+      <section className="bg-surface-light border-t border-neon-purple/30 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-6">
-            <h3 className="text-lg font-bold text-amber-300 mb-2">🔬 Prototype Environment</h3>
+          <div className="bg-neon-purple/10 border border-neon-purple/30 rounded-lg p-6 shadow-lg shadow-neon-purple/20">
+            <h3 className="text-lg font-bold text-neon-purple mb-2 uppercase tracking-wider">🔬 Prototype Environment</h3>
             <p className="text-dim text-sm">
               All displayed data is illustrative and for demonstration purposes only. This is not a live settlement system. 
               No guaranteed returns language. Capital at risk in any real-world deployment. Not an investment offer where restricted by law.

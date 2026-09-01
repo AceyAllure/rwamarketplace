@@ -14,11 +14,12 @@ html {
 
 body {
   @apply bg-base text-cream font-sans antialiased;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a0f35 50%, #0a0e27 100%);
 }
 
 /* Selection */
 ::selection {
-  @apply bg-gold-600 text-black;
+  @apply bg-neon-cyan text-black;
 }
 
 /* Scrollbar */
@@ -28,27 +29,54 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-surface;
+  @apply bg-surface-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gold-600 rounded-lg hover:bg-gold-500;
+  @apply bg-gradient-to-b from-neon-cyan to-neon-purple rounded-lg hover:from-neon-cyan hover:to-neon-blue;
 }
 
 /* Links */
 a {
-  @apply text-gold-400 hover:text-gold-300 transition-colors;
+  @apply text-neon-cyan hover:text-neon-blue transition-colors;
 }
 
 /* Input focus */
 input:focus,
 select:focus,
 textarea:focus {
-  @apply outline-none;
+  @apply outline-none ring-2 ring-neon-cyan/50;
 }
 
 /* Smooth transitions */
 button,
 a {
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+/* Neon glow animations */
+@keyframes neon-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.8), 0 0 40px rgba(0, 240, 255, 0.5);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 240, 255, 0.6);
+  }
+}
+
+.animate-neon-glow {
+  animation: neon-glow 3s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
 }
