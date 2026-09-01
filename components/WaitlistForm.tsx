@@ -36,7 +36,7 @@ export function WaitlistForm() {
         <div className="text-3xl mb-3">✓</div>
         <h3 className="text-xl font-bold text-gold-400 mb-2">Request Received</h3>
         <p className="text-dim">
-          Thank you for your interest. We'll notify you when assets matching your criteria become available.
+          Thank you for your interest. We&apos;ll notify you when assets matching your criteria become available.
         </p>
       </div>
     )

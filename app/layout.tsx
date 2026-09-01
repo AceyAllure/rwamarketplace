@@ -1,12 +1,16 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import './globals.css'
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export const metadata: Metadata = {
   title: 'Kurogami RWA Marketplace - Prototype',
   description: 'Real-world asset participation surface. Browse tokenized-style asset listings and claim pathways inside Kurogami.',
-  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({
