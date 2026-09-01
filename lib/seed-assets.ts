@@ -30,7 +30,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$25k',
     projectedTerm: '24 months',
     participationNote: 'Structured claim on completed residential development. Illustrative returns based on market benchmarks.',
-    image: '🏢',
+    image: 'https://images.unsplash.com/photo-1512207736139-113001d91d0b?w=600&h=400&fit=crop&q=80',
     overview: 'Premium residential property in Miami\'s Brickell district. This claim structure provides exposure to property appreciation and rental income distributions. Participants receive quarterly reports on property performance metrics, occupancy rates, and maintenance activities. Capital is represented through tokenized claim units.',
     structure: {
       claimRepresentation: 'Participants receive fractional claims encoded as marketplace units. Each unit represents proportional rights to cash distributions.',
@@ -50,7 +50,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$50k',
     projectedTerm: '36 months',
     participationNote: 'Diversified charter utilization rights. Demo metrics reflect typical charter revenue profiles.',
-    image: '✈️',
+    image: 'https://images.unsplash.com/photo-1551524164-0fcdb5b76ae9?w=600&h=400&fit=crop&q=80',
     overview: 'Participation claim on a managed light-jet charter portfolio operating across North America and Caribbean routes. Claim structure captures revenue from charter bookings, maintenance reserves, and fuel efficiency gains. Participants receive monthly utilization reports and revenue distributions.',
     structure: {
       claimRepresentation: 'Claim units represent fractional rights to charter revenue pool. Revenue allocation determined by utilization and booking rates.',
@@ -70,7 +70,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$15k',
     projectedTerm: '18 months',
     participationNote: 'Curated rare watch portfolio. Coming soon to marketplace. Valuation based on comparable auction benchmarks.',
-    image: '⌚',
+    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600&h=400&fit=crop&q=80',
     overview: 'Securitized claim on a carefully curated portfolio of vintage and contemporary horology pieces held by specialized custodian. Exposure to collector market dynamics and scarcity premiums. Participants receive bi-annual appraisals and condition assessments.',
     structure: {
       claimRepresentation: 'Each claim unit represents fractional custody rights and economic exposure to portfolio appreciation.',
@@ -90,7 +90,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$10k',
     projectedTerm: '12 months',
     participationNote: 'Verified carbon credit pool. Demo yield assumes mid-market pricing. Market-linked valuation.',
-    image: '🌱',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&q=80',
     overview: 'Participation in a verified carbon credit retirement pool from validated reforestation and emissions reduction projects across Southeast Asia. Credits are verified by third-party auditors and registered on recognized registries. Quarterly reports show project progress and credit verification status.',
     structure: {
       claimRepresentation: 'Claim units represent fractional ownership of verified carbon credit inventory held in escrow.',
@@ -110,7 +110,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$50k',
     projectedTerm: '24 months',
     participationNote: 'Emerging artist selection. Reserved for existing participants. Metrics from gallery comparables.',
-    image: '🎨',
+    image: 'https://images.unsplash.com/photo-1561214115-6d2f1b0609fa?w=600&h=400&fit=crop&q=80',
     overview: 'Fractional claim on a curated selection of works by emerging contemporary artists held by specialized art custodian. Exposure to artist market development and institutional acquisition. Semi-annual appraisals and exhibition documentation provided.',
     structure: {
       claimRepresentation: 'Claim units represent fractional rights to artwork appreciation and institutional sale proceeds.',
@@ -130,7 +130,7 @@ export const seedAssets: RWAAsset[] = [
     minimumParticipation: '$100k',
     projectedTerm: '6 months',
     participationNote: 'Senior credit claims on private borrowers. Demo yields reflect mid-market structuring. Secured or unsecured.',
-    image: '💳',
+    image: 'https://images.unsplash.com/photo-1554224311-beee415c15c4?w=600&h=400&fit=crop&q=80',
     overview: 'Participation claim on a diversified portfolio of short-duration senior and mezzanine credit facilities to North American middle-market companies. Structured claims capture regular interest distributions and principal repayment. Monthly portfolio reporting shows borrower performance, payment status, and covenant compliance.',
     structure: {
       claimRepresentation: 'Claim units represent pro-rata participations in credit facility cash flows with defined seniority.',

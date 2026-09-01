@@ -36,8 +36,12 @@ export default function AssetDetailPage({ params }: AssetDetailPageProps) {
           </div>
 
           {/* Image Placeholder */}
-          <div className="h-64 sm:h-96 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 rounded-lg flex items-center justify-center text-9xl mb-8 hover:from-neon-cyan/20 hover:to-neon-purple/20 transition-all duration-300 border border-neon-cyan/30 shadow-lg shadow-neon-cyan/20">
-            {asset.image}
+          <div className="h-64 sm:h-96 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 rounded-lg flex items-center justify-center overflow-hidden mb-8 hover:from-neon-cyan/20 hover:to-neon-purple/20 transition-all duration-300 border border-neon-cyan/30 shadow-lg shadow-neon-cyan/20">
+            <img 
+              src={asset.image}
+              alt={asset.name}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
           </div>
 
           {/* Title & Status */}

@@ -9,8 +9,12 @@ export function AssetCard({ asset }: AssetCardProps) {
   return (
     <div className="bg-surface-light rounded-lg overflow-hidden border border-neon-cyan/30 hover:border-neon-cyan transition-all duration-300 hover:shadow-glow-cyan group cursor-pointer">
       {/* Image */}
-      <div className="h-40 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 flex items-center justify-center text-6xl group-hover:from-neon-cyan/20 group-hover:to-neon-purple/20 transition-all duration-300">
-        {asset.image}
+      <div className="h-40 bg-gradient-to-br from-neon-cyan/10 to-neon-purple/10 flex items-center justify-center overflow-hidden group-hover:from-neon-cyan/20 group-hover:to-neon-purple/20 transition-all duration-300 relative">
+        <img 
+          src={asset.image} 
+          alt={asset.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
       
       {/* Content */}
