@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-cream font-sans antialiased;
+}
+
+/* Selection */
+::selection {
+  @apply bg-gold-600 text-black;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold-600 rounded-lg hover:bg-gold-500;
+}
+
+/* Links */
+a {
+  @apply text-gold-400 hover:text-gold-300 transition-colors;
+}
+
+/* Input focus */
+input:focus,
+select:focus,
+textarea:focus {
+  @apply outline-none;
+}
+
+/* Smooth transitions */
+button,
+a {
+  transition: all 200ms ease-in-out;
+}
